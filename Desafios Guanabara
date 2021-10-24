@@ -1,0 +1,154 @@
+#DESAFIO 1
+#Crie um sprint python que leia dois números e tente mostrar a soma entre eles
+print('Olá, Mundo!')
+msg = ('Olá, mundo!')
+print(msg)
+
+n1 = int(input('Primeiro número'))
+n2 = int(input('Segundo número'))
+soma = n1+n2
+print('A soma vale',soma)
+
+#DESAFIO 2
+nome = input('Qual é o seu nome? ')
+sobrenome = input("E seu sobrenome?")
+idade = int(input('E sua idade?'))
+print('É um prazer te conhecer, {}!'.format(nome,sobrenome,idade))
+
+#{}!'.format(nome) sustituir o nome
+
+#DESAFIO 3
+#Crie um programa que leia dois numeros e mostre a soma entre eles
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro: '))
+s = n1+n2
+
+print('A soma entre {} e {} é {}'.format(n1, n2, s))
+
+#DESAFIO 4
+#Faça um programa que leia algo pelo teclado e mostre seu tipo primitivo e todas as informaçoes possivel sobre ele
+
+a = input('Digite algo: ')
+print('O tipo primitivo desse valor é ', type(a))
+print('Só tem espaços? ', a.isspace())
+print('É um número?', a.isnumeric())
+print('É alfabético?', a.isalpha())
+print('É alfanumerico? ', a.isalnum())
+print('Está em maiúscula? ', a.isupper())
+print('Está em minúsculas? ', a.islower())
+print('Está capitalizada?', a.istitle())
+
+#DESAFIO 5
+#Faça um programa que leia um número inteiro e mostre na sua tela  seu sucessor e seu antecessor
+n = int(input('Digite um número: '))
+print('O antecessor do número {} é: {}'.format(n, n-1))
+print('O sucessor desse número é {}: {}'.format(n, n+1))
+
+#DESAFIO 6
+# Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada
+n= int(input('Digite um número: '))
+d = n*2
+t = n*3
+r = n**(1/2)
+print('O dobro de {} é: {}'.format(n, d))
+print('O triplo de {} é: {}'.format(n, t))
+print('A raiz quadrada de {} é: {}'.format(n, r))
+
+
+#DESAFIO 7
+#Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média
+
+n1 = float(input('Digite a nota 1:'))
+n2 = float(input('Digite a nota 2:'))
+m = (n1 + n2)/2
+
+print('A média final do aluno é {}'.format(m))
+
+#DESAFIO 8
+#Escreva um programa que leia um valor em metros e o exiba convertido em centimetros e milimetros
+
+v = float(input('Digite um valor em metros: '))
+c = v*100
+m = v*1000
+
+print('O valor digitado em metros equivale a {} centímetros'.format(c))
+print('O valor digitado em metros equivale a {} milímetros'.format(m))
+
+#DESAFIO 9
+# Faça um programa que leia um numero inteiro qualquer e mostre na tela sua tabuada
+
+n = int(input('Digite um número para ver sua tabuada: '))
+
+t1 = n
+t2 = n + t1
+t3 = n + t2
+t4 = n + t3
+t5 = n + t4
+t6 = n + t5
+t7 = n + t6
+t8 = n + t7
+t9 = n + t8
+t10 = n + t9
+
+
+
+print('A tabuada do número digitado é:')
+print('{} X 1 = {}'.format(n, t1))
+print('{} X 2 = {}'.format(n, t2))
+print('{} X 3 = {}'.format(n, t3))
+print('{} X 4 = {}'.format(n, t4))
+print('{} X 5 = {}'.format(n, t5))
+print('{} X 6 = {}'.format(n, t6))
+print('{} X 7 = {}'.format(n, t7))
+print('{} X 8 = {}'.format(n, t8))
+print('{} X 9 = {}'.format(n, t9))
+print('{} X 10 = {}'.format(n, t10))
+
+#DESAFIO 9
+#Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dolares ela pode comprar.
+#considere um dolar = 3,27
+
+r = float(input('Qual o valor em reais que vc tem na carteira?'))
+
+#real para dolar
+
+d = r / 3.27
+
+print('Vc pode comprar {:.3} dólares'.format(d))
+
+#DESAFIO 11
+#Faça um programa que leia a largura e a altura de uma parede em metros. Calcule sua area e a qtdade de tinta necessaria
+#para pinta-la, sabendo que cada litro de tinta pinta uma area de 2metrosquadrados
+
+l = float(input('Digite a largura da parede em metros: '))
+a = float(input('Digite a altura da parede em metros: '))
+
+#calculo da area da parede
+
+area = l * a
+
+print('Área da parede = {} metros quadrados'.format(area))
+
+#calculo da tinta - sabendo q cada litro pinta 2 metrosquadrados
+
+tinta = area/2
+
+print('Você usará {} litros de tinta'.format(tinta))
+
+#DESAFIO 12
+
+#Faça um algoritmo que leia o preco de um produto e mostre seu novo preco com 5% de desconto
+
+p = float(input('Digite o valor do produto em reais: '))
+
+#cálculo do desconto de 5%
+
+desconto = p*0.05
+valor = p - desconto
+
+print('O valor do seu produto com desconto será de R$ {}'.format(valor))
+
+#DESAFIO 13
+
+
