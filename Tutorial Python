@@ -1,0 +1,162 @@
+print('Olá, Mundo!')
+msg = ('Olá, mundo!')
+print(msg)
+#outra maneira de print
+print('A soma vale {}'.format(s))
+#{} mascara. qdo vc coloca o format o que esta dentro dos parenteses vai pra chave
+
+nome = input('Qual é o seu nome? ')
+sobrenome = input("E seu sobrenome?")
+idade = int(input('E sua idade?'))
+print('É um prazer te conhecer, {}!'.format(nome,sobrenome,idade))
+
+#Variável - É um espacinho no computador pra guardar o que o usuário vai digitar
+
+# Desafio 1 = Criar uma mensagem que leia o nome de uma pessoa e mostre uma mensagem de boas vindas
+
+nome = input("Qual é o seu nome? ")
+print(nome, ", Seja muito bem vindo(a)!")
+
+# Desafio 2 = Leia dia, mês e ano de nascimento de uma pessoa e mostre uma msg com a data formatada
+
+data = input('Qual o dia do seu nascimento? ')
+mes = input('Qual o mês do seu nascimento? ')
+ano = input('Qual o seu ano de nascimento? ')
+
+
+print('Você nasceu no dia',data,'de',mes,'de',ano, ',correto?')
+
+#ver tipo de classe - type
+n1 = input('Digite um valor')
+print(type(n1))
+
+#{} máscara
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite outro: '))
+s = n1 + n2
+print('A soma entre {} e {} vale {}'.format(n1,n2, s))
+
+#print('A soma entre {} e {} vale {}').format(n1, n2, s))
+
+
+#{}!'.format(nome) sustituir o nome
+#Tipos primitivos
+#4 tipos primitivos iniciais
+#Crie um sprint python que leia dois números e tente mostrar a soma entre eles
+
+#int
+#sem o int ele lê o número como nome(string) - concatenação
+#numeros inteiros: 4, 7, -7, 0, 9875 - sem virgulas
+#td q está dentro do parenteses vai ser lido com um número inteiro
+n1 = int(input('Primeiro número'))
+n2 = int(input('Segundo número'))
+soma = n1+n2
+print('A soma é',soma)
+
+#float - numeros reais ou numeros de ponto flutuante
+# 4.6 , 0.66 , -15.223, 7.0 (numeros com ponto, virgula. ponto flutuante) - numero real, valor de pi
+n = float(input('Digite um valor: '))
+print(n)
+#transforma para float
+#se quiser saber o tipo print(type(n))
+
+#bool - valores logicos ou boleanos
+#só aceitam dois valores: verdadeiro (True) ou false (False) - capitalizado
+#ler v ou f
+n = bool(input('Digite um valor: '))
+print(n)
+
+#str - caracteres ou strings
+#palavras, todas entres ''(string vazia), '7.5'
+
+#se é possivel converter o q digito em numerico
+n = input('Digite algo')
+print(n.isnumeric())
+
+#Faça um programa que leia algo pelo teclado e mostre seu tipo primitivo e todas as informaçoes possivel sobre ele
+#parenteses - metodos
+#todo sring tem esses metodos
+
+a = input('Digite algo: ')
+print('O tipo primitivo desse valor é ', type(a))
+print('Só tem espaços? ', a.isspace())
+print('É um número?', a.isnumeric())
+print('É alfabético?', a.isalpha())
+print('É alfanumerico? ', a.isalnum())
+print('Está em maiúscula? ', a.isupper())
+print('Está em minúsculas? ', a.islower())
+print('Está capitalizada?', a.istitle())
+
+#Fazendo na formatação nova
+print(f'Está capitalizada? {a.istitle()}')
+
+#Operadores aritméticos
+#operadores precisam de operandos - pode ser numero, string, variavel
+#Operadores binários precisam de dois operandos
+# 5 + 2 , 5-2, 5//2, 5**6==, 5%6== -> no python = é == . um é recebe(atribuição)
+# + adição
+
+# - subtraçã0
+
+# * multiplicação
+
+#  / Divisão
+
+# ** Potência
+pow(4,3)
+64
+# //Divisão inteira
+
+
+# % Resto de divisão
+
+#Raiz quadrada
+81**(1/2)
+9.0
+#para calcular a raiz quadrada é só elevar esse numero a 1/2
+#raiz cubica (1,3)
+
+#Ordem de precedência
+#1 - ()
+#2 - **
+#3 - * / // % - faz quem aparecer primeiro
+#4 - + -
+
+# alinhar a direita o carol :> - 20 espaços alinhado a direita
+nome = input('Qual é o seu nome?')
+print('Prazer em te conhecer, {:>20}!'.format(nome))
+#centralizado
+print('Prazer em te conhecer, {:^20}!'.format(nome))
+#20 espacos, centralizado e com o sinal q coloquei
+nome = input('Qual é o seu nome?')
+print('Prazer em te conhecer, {:=^20}!'.format(nome))
+
+n1 = int(input('Um valor '))
+n2 = int(input('Outro valor'))
+s = n1 + n2
+m = n1 * n2
+d = n1 / n2
+di = n1 // n2
+e = n1 ** n2
+
+print('A soma é {}, o produto é {}, a divisão é {}, a divisão inteira é {}, a fatoração é {}'.format(s, m, d, di, e))
+Um valor 2
+Outro valor8
+A soma é 10, o produto é 16, a divisão é 0.25, a divisão inteira é 0, a fatoração é 256
+
+Process finished with exit code 0
+
+# quiser controlar o numero de casas - {:.3f}
+print(
+    'A soma é {}, o produto é {}, a divisão é {:.3f}, a divisão inteira é {:.3f}, a fatoração é {}'.format(s, m, d, di,
+                                                                                                           e))
+
+#se nao quiser quebrar linha - end=' '
+print('A soma é {}, o produto é {}, a divisão é {:.3f}'.format(s, m, d), end=' ')
+print('Divisão inteira é {}, e portência é {}'.format(di, e))
+
+#para quebrar linha \n
+print('A soma é {}, \n o produto é {}, \n a divisão é {:.3f}'.format(s, m, d), end=' ')
+
+#>>>
+end=' >>> ')
