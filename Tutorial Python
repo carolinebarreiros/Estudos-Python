@@ -208,3 +208,67 @@ num = float(input('Digite um valor: '))
 print('O valor digitado foi {} e sua porção inteira é {}'.format(num, int(num)))
 
 
+#AULA 9 - MANIPULANDO CADEIAS DE TEXTO
+
+Curso em vídeo Python - cadeias de textos \ caracteres ''
+frase = 'Curso em Python'
+
+# > Fatiamento
+    frase[9]- []lista
+    Pegar uma letra - quero pegar 9 - inicia em 0
+    frase [9:13] - vai ir de 9 a 12 - incluindo o 9 e removendo o 13
+    frase[9:21:2] - vai de 9 a 20, pulando de 2 em 2
+    frase[:5]- :(onde vai comecar). como nao coloquei ,ele vai ate o 0-4
+    frase[15:] - vai ir ate o final
+    frase[9::3] : - vai ate o final, :3 vai pular de 3 em 3
+    
+# > Análise
+    len - cumprimento - frase = 'Curso em Vídeo Python'
+    print(len(frase))
+    len(frase) - 21 caracteres - ex.
+    frase.count('o') - qtas vezes aparece a letra o
+    frase.count('o', 0, 13) - ele vai do 0 até 12 somente com as letras o
+    frase.find('deo') - - ele vai dizer onde começou
+    frase.find('Android') - vai dar -1 ( nao existe aqui embaixo)
+    'curso'in frase - true
+    
+#> Transformação
+   > frase.replace('Python", 'Android') - 
+        frase = 'Curso em Vídeo Python'
+        print(frase.replace('Python', 'Android'))
+      >  para salvar
+        frase = 'Curso em Vídeo Python'
+        frase = frase.replace('Python', 'Android')
+        print(frase)
+      > print(frase.find('Curso'))
+
+    frase.upper() - vai ficar em maiusculas
+    frase.lower() - vai tudo pra minusculo
+    frase.capitalize() - Só o primeiro fica maiusculo
+    frase.title() - todas as primeiras palavras maiusculas
+    frase.strip() - remove todos os espacos antes e depois
+    frase.rstrip() - so remove os espaços da direita
+    frase.lstrip() - so remove os da esquerda
+    
+#Divisão
+    frase.split() - cada um das palavras vai gerar uma lista.divide uma strig em uma lista
+    
+  >   frase = 'Curso em Vídeo Python'
+    print(frase.split())
+    
+    >frase = 'Curso em Vídeo Python'
+dividido = frase.split()
+print(dividido[0])
+
+> frase = 'Curso em Vídeo Python'     (aqui ele mostra a letra 2 da palavra 3
+dividido = frase.split()
+print(dividido[2] [3])
+    
+#Junção
+    '-'.join(frase) - vai juntar e colocar tracinhos
+    
+#Colar um franse grande mas sem dar print por linha """
+print("""Os ventos, as chuvas, as ondas do mar e as mudanças de temperatura são exemplos de 
+agentes importantes na formação de rochas. 
+Quais são as rochas que dependem desses agentes para ser formadas? Justifique sua resposta""")
+
