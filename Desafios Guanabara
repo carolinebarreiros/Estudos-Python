@@ -219,3 +219,64 @@ cateto_adj = float(input('Qual o valor do cateto adjacente? '))
 hipotenusa = math.hypot(cateto_oposto, cateto_adj)
 
 print('O cateto oposto é {}. O cateto adjacente é {}.\nComo  o quadrado da hipotenusa é igual a soma dos quadrados dos catetos, o valor da hipotenusa é: {:.2f}'.format(cateto_oposto, cateto_adj, hipotenusa))
+
+#DESAFIO 18
+
+#Faça um programa que leia um angulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ngulo
+
+import math
+n = float(input('Digite o ângulo de um ângulo: '))
+
+s = math.sin(math.radians(n))
+c = math.cos(math.radians(n))
+t = math.tan(math.radians(n))
+
+print('O valor do seno é {:.2f}:.\nO valor do coseno é {:.2f}.\nO valor da tangente é: {:.2f}'.format(s, c, t))
+
+#DESAFIO 19 - random.choice
+
+#Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que o ajude. Lendo o nome
+#deles e escrevendo o nome do escolhido
+import random
+
+aluno1 = input('Digite o nome do aluno 1: ')
+aluno2 = input('Digite o nome do aluno 2: ')
+aluno3 = input('Digite o nome do aluno 3: ')
+aluno4 = input('Digite o nome do aluno 4: ')
+
+'''print('Os alunos são: {}, {}, {}, {}'.format(aluno1, aluno2, aluno3, aluno4))
+
+s = random.random(aluno1, aluno2, aluno3, aluno4)
+
+print('O aluno sorteado foi: {}'.format(s))'''
+
+#criei uma lista
+lista = [aluno4, aluno3, aluno2, aluno1]
+s = random.choice(lista)
+print('O aluno escolhido foi {}'.format(s))
+
+#DESAFIO 20 - random.shuffle
+# O mesmo professor do desafio anterior quer sortear a ormde de apresentação de trabalhos dos alunos.
+# Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada
+
+import random
+n1 = input('Digite um nome: ')
+n2 = input('Digite outro nome: ')
+n3 = input('Digite mais um nome: ')
+n4 = input('Digite um nome: ')
+
+lista = [n1,n2, n3, n4]
+random.shuffle(lista)
+print('A ordem escolhida foi: {}'.format(lista))
+
+#DESAFIO21 - tocar música
+
+#Faça um programa em Python que abra e reproduza o áudio de um arquivo mp3
+
+import pygame
+pygame.init()
+pygame.mixer.music.load('ex01.mp3')
+pygame.mixer.music.play()
+input('Agora eu escuto?')
+pygame.event.wait()
+
