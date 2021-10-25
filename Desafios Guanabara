@@ -151,4 +151,71 @@ print('O valor do seu produto com desconto será de R$ {}'.format(valor))
 
 #DESAFIO 13
 
+#Faça um algoritmo que leia o salario de um funcionario e mostre seu novo salario, com 15% de aumento
 
+salario_atual = float(input('Digite o salário atual do funcionário em reais: '))
+
+#calculo de 15%
+
+aumento = salario_atual * 0.15
+
+novo_salario = salario_atual + aumento
+
+print('O novo salário com 15% de aumento será {} reais'.format(novo_salario))
+
+
+#DESAFIO 14
+#Transforme de graus C para F
+
+c = float(input('Digite a temperatura em graus Celsius: '))
+f = 9 * c / 5 + 32
+
+print('A temperatura {} graus celsius é de {}F'.format(c, f))
+
+#DESAFIO 15
+# Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e qtdade de dias pelos quais
+#ele foi alugado. Calcule o preço a pagar. sabendo que o carro custa R$ 60.00 por dia e 0.15 reais por km rodada
+
+dias = int(input('Por quantos dias você alugou o carro? '))
+km = float(input('Quantos KM você rodou com o carro?' ))
+
+#calculo da diária
+diaria = dias * 60
+
+#calculo por km
+kmtotal = km * 0.15
+
+print('Você ficou {} dias com o carro. E rodou {} KM. Logo, o total a ser pago é: R$ {:.2f}'.format(dias, km, diaria+kmtotal))
+
+#DESAFIo 16
+
+#Crie um programa que leia um número real qualquer pelo teclado e mostre na tela a sua porção inteira
+
+''''import math
+n = float(input('Digite um número para ver sua porção inteira: '))
+pi = math.floor(n)
+print('O valor digitado foi: {}. A porção inteira desse número é: {}'.format(n, pi))'''''
+
+'''OU
+print('O valor digitado foi {} e sua porção inteira é {}'.format(num, math.truc(num)))'''
+
+'''from math import trunc
+num = float(input('Digite um valor: '))
+print('O valor digitado foi {} e a sua porção inteira é {}'.format(num, trunc(num)))'''
+
+num = float(input('Digite um valor: '))
+print('O valor digitado foi {} e sua porção inteira é {}'.format(num, int(num)))
+
+
+#DESAFIO 17
+#Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo
+#Calcule e mostre o comprimento da hipotenusa
+
+import math
+
+cateto_oposto = float(input('Qual o valor do cateto oposto? '))
+cateto_adj = float(input('Qual o valor do cateto adjacente? '))
+
+hipotenusa = math.hypot(cateto_oposto, cateto_adj)
+
+print('O cateto oposto é {}. O cateto adjacente é {}.\nComo  o quadrado da hipotenusa é igual a soma dos quadrados dos catetos, o valor da hipotenusa é: {:.2f}'.format(cateto_oposto, cateto_adj, hipotenusa))
