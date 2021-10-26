@@ -272,3 +272,10 @@ print("""Os ventos, as chuvas, as ondas do mar e as mudanças de temperatura sã
 agentes importantes na formação de rochas. 
 Quais são as rochas que dependem desses agentes para ser formadas? Justifique sua resposta""")
 
+# IF
+    Se
+    Else - só mais uma condição
+    elif - senão se
+    else - se nada disso for verdade
+    
+    
