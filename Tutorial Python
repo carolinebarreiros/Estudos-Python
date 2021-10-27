@@ -464,4 +464,51 @@ nome_da_funcao()
 
 #FUNÇÕES
 
-Funções são blocos de instrução que podem ser invocados de qualquer parte do código. Toda função, por definição, tem um nome, pode receber parâmetros e retornar valores. Em Python, funções são implementações de métodos que podem ser invocados por objetos.
+Funções são blocos de instrução que podem ser invocados de qualquer parte do código. Toda função, por definição, tem um nome, pode receber parâmetros e retornar valores. 
+Em Python, funções são implementações de métodos que podem ser invocados por objetos. As funções são blocos de código e realizam tarefas que geralmente
+precisam ser executadas diversas vezes em uma aplicação.
+O Python é uma linguagem de programação orientada a objetos (POO), com recursos que
+dão suporte a esta, como a criação e utilização de classes.
+Um dos principais propósitos das funções é agrupar os códigos que serão executados várias vezes,
+sendo que, sem uma função definida, seria necessário copiá-los e colá-los cada
+vez que fossem usados, resultando em um programa de aspecto mais poluído
+e uma manutenção bem mais complexa
+
+    Nome - nome da função
+    args - são especificadores de argumetos de função
+    Uma funçao pode ter 0, 1 argumentos.
+    Comando - contém as instruções a serem executadas quando a função é invocada.
+    
+        > Variáveis locais - utilizadas somente em funções que foram definidas
+        > Variáveis globais - definidas fora de funções.
+    
+    def ola():
+ print('Olá!')
+ print('Olá!!!')
+ print('Alguém aí?')
+ola()
+ola()
+ola()    - função
+ola()
+    
+   >>  NONE
+    Em Python, há o None, que representa a ausência de um valor e é o único valor do tipo de dado NoneType — outras linguagens de programação também o chamam de null,
+    nil ou undefined. 
+    . Esse valor pode ser útil quando houver a necessidade de armazenar algo que não deva
+ser confundido com um valor real em uma variável. Um local em que se usa
+None é como valor de retorno de print(), cuja função exibe um texto na tela e
+não precisa retornar nada, como len() ou input() o fazem. No entanto, como
+todas as chamadas de função devem ser avaliadas com um valor de retorno,
+print() retorna None.
+
+CLASSES
+
+Classes
+Uma classe representa uma categoria de objeto, por exemplo, a classe carro
+envolve todos os tipos de carro, mas cada carro ou objeto implementa
+seus atributos e métodos. Objetos são abstrações computacionais que
+representam entidades, com as qualidades (atributos) e as ações (métodos)
+que elas podem realizar. A classe é ainda a estrutura básica do paradigma
+de orientação aos objetos, que se refere ao seu tipo, um modelo a partir
+do qual esses objetos serão criados.
+
