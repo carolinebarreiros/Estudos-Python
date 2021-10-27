@@ -461,3 +461,7 @@ Para declarar uma função, devemos usar a palavra chave def do mundo Python, se
     Para chamar a nossa própria função, usamos o nome dela seguido pelos parênteses, por exemplo:
 
 nome_da_funcao()
+
+#FUNÇÕES
+
+Funções são blocos de instrução que podem ser invocados de qualquer parte do código. Toda função, por definição, tem um nome, pode receber parâmetros e retornar valores. Em Python, funções são implementações de métodos que podem ser invocados por objetos.
