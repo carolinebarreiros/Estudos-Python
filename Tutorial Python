@@ -277,5 +277,187 @@ Quais são as rochas que dependem desses agentes para ser formadas? Justifique s
     Else - só mais uma condição
     elif - senão se
     else - se nada disso for verdade
+    nome = "Nico"
+
+sobrenome = "Steppat"
+print(nome, sobrenome, sep="_") ou end
+
+    #adivinhar um número secreto
+print('*********************************')
+print('Bem vindo no jogo de adivinhação!')
+print('*********************************')
+
+numero_secreto = 42
+
+
+chute = int(input('Digite o seu número: '))
+
+print('Você digitou:' , chute)
+
+acertou = numero_secreto == chute
+maior = chute > numero_secreto
+menor = chute < numero_secreto
+
+if(acertou):
+    print('Você acertou!')
+else:
+    if(maior):
+        print('Vc chutou pra cima')
+    elif(menor):
+        print('Vc chutou pra baixo')
+
+print('Fim do jogo.')
+
+# WHILE
+
+    Se vc quer repetir um código, vc usa um laço
     
+    #adivinhar um número secreto
+print('*********************************')
+print('Bem vindo no jogo de adivinhação!')
+print('*********************************')
+
+numero_secreto = 42
+total_de_tentativas = 3
+rodada = 1
+
+
+#enquanto há tentativas:
+#enquanto há tentativas execute este codigos (while). While como o if recebe uma condição. Mas o IF faz uma vez.
+#o while executa enquanto ainda há esta condição.
+# Começo com 0 e em cada laço (rodada vou diminuindo)
+
+while(rodada <= total_de_tentativas):
+    print('Tentativa {} de {}'.format(rodada, total_de_tentativas))
+    chute = int(input('Digite um numero: '))
+    print('Vc digitou', chute)
+
+    acertou = chute == numero_secreto
+    maior =   chute > numero_secreto
+    menor =   chute < numero_secreto
+
+    if(acertou):
+        print('Vc acertou!')
+    elif(maior):
+        print('Vc chutou pra cima')
+    elif(menor):
+        print('Vc chutou pra baixo')
+
+    rodada = rodada + 1
     
+#FOR
+
+#FOR
+    ##Com qual valor vc quer começar e até qual valor vc quer ir.
+   # Range - define uma série de valores
+# ex:. for rodada in range (1, 10): quero fazer um laço - (for - para), essa variavel (rodada) pega o valor dentro dessa serie (in range) de valores
+    #pega do laço 1 até o 10
+    #se quiser um step (1,10,2)
+    
+    #Se n usar o range [1, 2, 3, 4...] - o range define isso. lembra de colocar o range + 1''
+    range(start, stop, [step])
+    
+    #adivinhar um número secreto
+print('*********************************')
+print('Bem vindo no jogo de adivinhação!')
+print('*********************************')
+
+numero_secreto = 42
+total_de_tentativas = 3
+rodada = 1
+
+
+#enquanto há tentativas:
+#enquanto há tentativas execute este codigos (while). While como o if recebe uma condição. Mas o IF faz uma vez.
+#o while executa enquanto ainda há esta condição.
+# Começo com 0 e em cada laço (rodada vou diminuindo)
+
+for rodada in range(1, total_de_tentativas + 1):
+    print('Tentativa {} de {}'.format(rodada, total_de_tentativas))
+    chute = int(input('Digite um numero: '))
+    print('Vc digitou', chute)
+
+    acertou = chute == numero_secreto
+    maior =   chute > numero_secreto
+    menor =   chute < numero_secreto
+
+    if(acertou):
+        print('Vc acertou!')
+    elif(maior):
+        print('Vc chutou pra cima')
+    elif(menor):
+        print('Vc chutou pra baixo')
+
+print('Fim de jogo')
+
+for rodada in range(1, total_de_tentativas + 1):
+    print('Tentativa {} de {}'.format(rodada, total_de_tentativas))
+    chute = int(input('Digite um numero entre 1 e 100: '))
+    print('Vc digitou', chute)
+
+    if(chute < 1 or chute > 100):
+        print('Vc deve digitar um número entre 1 e 100!')
+        continue
+        #ele n para. se digitar menor do q 0 ele reinicia a iteração.
+
+
+    acertou = chute == numero_secreto
+    maior =   chute > numero_secreto
+    menor =   chute < numero_secreto
+
+    if(acertou):
+        print('Vc acertou!')
+        break
+        #break - ele sai do laço
+    elif(maior):
+        print('Vc chutou pra cima')
+    elif(menor):
+        print('Vc chutou pra baixo')
+
+print('Fim de jogo')
+
+R$ {:7.2f} - 7 casas e duas casas decimais (float)
+R$ {:07d}.formart(46) - numero inteiro
+Data: {:02d}/{02d}.format(19,11)
+   
+   Ordem dos parametros {}
+   Com o .format(), podemos especificar a ordem em que os parâmetros aparecem na string, basta apenas colocar entre as chaves ({}) da string formatada qual 
+   parâmetro você quer exibir. É válido lembrar também, que o primeiro parâmetro é o zero, pois tradicionalmente na computação começamos contando de zero, ou seja, no nosso 
+   caso:
+
+print("Ola Sr.{1} {0}".format("Cordeiro","Leonardo"))
+
+
+Neste exemplo, queremos um número com 7 casas inteiras, sendo duas delas decimais, resultado é R$ 0004.11. Como colocamos um número de casas inteiras superior a quantidade de casas inteiras do número, o Python coloca 0 (zeros) à esquerda. Interessante também é que a função format até arredonda, por exemplo:
+
+"R$ {:7.1f}".format(1000.16)COPIAR CÓDIGO
+Retorna:
+
+R$  1000.2
+
+>>> nome = 'Matheus'
+>>> print(f'Meu nome é {nome}')
+Meu nome é MatheusCOPIAR CÓDIGO
+Quando colocamos a letra f antes das aspas, informamos ao Python que estamos utilizando uma f-string. Dessa forma o Python consegue, 
+em tempo de execução, captar a expressão que está entre chaves ({ }) e avaliá-la.
+
+Além de variáveis, podemos passar também de funções e métodos:
+
+>>> nome = 'Matheus'
+>>> print(f'Meu nome é {nome.lower()}')
+Meu nome é matheus
+
+#RANDOM
+
+A função random.randrange() quando só possuí um parâmetro supõe que você quer dizer de zero até número passado -1, ou seja, neste caso, o menor número possível quando fazemos:
+
+# Declarar função
+
+Para declarar uma função, devemos usar a palavra chave def do mundo Python, seguida pelo nome da função.
+    def nome_da_funcao():
+    # todo o código identado faz parte da função
+    print("aprendendo funções")
+    
+    Para chamar a nossa própria função, usamos o nome dela seguido pelos parênteses, por exemplo:
+
+nome_da_funcao()
