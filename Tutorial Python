@@ -79,7 +79,7 @@ print(n.isnumeric())
 
 a = input('Digite algo: ')
 print('O tipo primitivo desse valor é ', type(a))
-print('Só tem espaços? ', a.isspace())
+print('Só tem ? ', a.isspace())
 print('É um número?', a.isnumeric())
 print('É alfabético?', a.isalpha())
 print('É alfanumerico? ', a.isalnum())
@@ -127,7 +127,8 @@ nome = input('Qual é o seu nome?')
 print('Prazer em te conhecer, {:>20}!'.format(nome))
 #centralizado
 print('Prazer em te conhecer, {:^20}!'.format(nome))
-#20 espacos, centralizado e com o sinal q coloquei
+#20 
+, centralizado e com o sinal q coloquei
 nome = input('Qual é o seu nome?')
 print('Prazer em te conhecer, {:=^20}!'.format(nome))
 
@@ -210,6 +211,11 @@ print('O valor digitado foi {} e sua porção inteira é {}'.format(num, int(num
 
 #AULA 9 - MANIPULANDO CADEIAS DE TEXTO
 
+ Pegar a primeira string
+x = 'Bom dia'
+contar = x[0]
+print(contar)
+
 Curso em vídeo Python - cadeias de textos \ caracteres ''
 frase = 'Curso em Python'
 
@@ -233,6 +239,7 @@ frase = 'Curso em Python'
     'curso'in frase - true
     
 #> Transformação
+
    > frase.replace('Python", 'Android') - 
         frase = 'Curso em Vídeo Python'
         print(frase.replace('Python', 'Android'))
@@ -250,6 +257,13 @@ frase = 'Curso em Python'
     frase.rstrip() - so remove os espaços da direita
     frase.lstrip() - so remove os da esquerda
     
+    
+    remover espacos do inicio e do final
+x = '   bom dia    '
+x = x.strip()
+print(x)
+
+
 #Divisão
     frase.split() - cada um das palavras vai gerar uma lista.divide uma strig em uma lista
     
@@ -421,7 +435,8 @@ R$ {:07d}.formart(46) - numero inteiro
 Data: {:02d}/{02d}.format(19,11)
    
    Ordem dos parametros {}
-   Com o .format(), podemos especificar a ordem em que os parâmetros aparecem na string, basta apenas colocar entre as chaves ({}) da string formatada qual 
+   Com o .format(), podemos especificar a ordem em que os parâmetros aparecem na 
+   , basta apenas colocar entre as chaves ({}) da string formatada qual 
    parâmetro você quer exibir. É válido lembrar também, que o primeiro parâmetro é o zero, pois tradicionalmente na computação começamos contando de zero, ou seja, no nosso 
    caso:
 
