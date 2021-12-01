@@ -5,6 +5,8 @@ print(msg)
 print('A soma vale {}'.format(s))
 #{} mascara. qdo vc coloca o format o que esta dentro dos parenteses vai pra chave
 
+
+
 nome = input('Qual é o seu nome? ')
 sobrenome = input("E seu sobrenome?")
 idade = int(input('E sua idade?'))
